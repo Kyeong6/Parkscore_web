@@ -1,0 +1,12 @@
+button {
+  background-color: transparent;
+  border: none;
+}
+
+.scorePercentWapper {
+  margin-left: var(--parkscore-left-width);
+
+  &> * {
+    margin: 1rem 0;
+  }
+}
