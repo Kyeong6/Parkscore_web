@@ -6,14 +6,14 @@ interface ParkScoreBuffer {
 }
 
 type ParkScore = {
-  도시명: string;
-  "접근 점수": number;
-  "면적 점수": number;
-  "투자 점수": number;
-  "공평 점수": number;
-  "시설 점수": number;
-  "총 점수": number;
-  순위: number;
+  city: string;
+  "access": number;
+  "acreage": number;
+  "investment": number;
+  "equity": number;
+  "amenities": number;
+  "total": number;
+  "rank": number;
 };
 
 export function parkScoreParser({ blob }: ParkScoreBuffer) {
@@ -23,13 +23,13 @@ export function parkScoreParser({ blob }: ParkScoreBuffer) {
     .map(
       (pasredScore) =>
         new ScoreWithCity({
-          city: pasredScore.도시명,
+          city: pasredScore.city,
           score: {
-            access: Math.round(pasredScore["접근 점수"]),
-            acreage: Math.round(pasredScore["면적 점수"]),
-            amentities: Math.round(pasredScore["투자 점수"]),
-            equity: Math.round(pasredScore["공평 점수"]),
-            investment: Math.round(pasredScore["시설 점수"]),
+            access: Math.round(pasredScore["access"]),
+            acreage: Math.round(pasredScore["acreage"]),
+            amentities: Math.round(pasredScore["investment"]),
+            equity: Math.round(pasredScore["equity"]),
+            investment: Math.round(pasredScore["amenities"]),
           },
         })
     );

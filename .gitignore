@@ -153,3 +153,7 @@ pnpm-debug.log*
 
 # jetbrains setting folder
 .idea/
+
+package-lock.json
+public/city-logo/
+parkscore_data.xlsx

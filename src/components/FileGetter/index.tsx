@@ -55,7 +55,7 @@ export const FileGetter = () => {
   return (
     <>
       <label htmlFor={id} className={style.fileGetterButton}>
-        파일 넣기
+        Upload File
       </label>
       <input
         className={style.inputFile}

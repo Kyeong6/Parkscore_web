@@ -3,16 +3,16 @@ import type { Score, ScoreWithCity } from "../dtos/score";
 export const MAX_LIST_ROW = 20;
 
 export const scoreNames: Record<keyof Score, string> = {
-  access: "접근",
-  acreage: "면적",
-  amentities: "투자",
-  equity: "공평",
-  investment: "시설",
+  access: "Access",
+  acreage: "Acreage",
+  amentities: "Amenities",
+  equity: "Equity",
+  investment: "Investment",
 };
 
 export const defaultScores: Array<ScoreWithCity> = [
   {
-    city: "서울특별시",
+    city: "Seoul",
     score: {
       access: 100,
       acreage: 100,
@@ -22,7 +22,7 @@ export const defaultScores: Array<ScoreWithCity> = [
     },
   },
   {
-    city: "부산광역시",
+    city: "Busan",
     score: {
       access: 95,
       acreage: 95,
@@ -32,7 +32,7 @@ export const defaultScores: Array<ScoreWithCity> = [
     },
   },
   {
-    city: "대구광역시",
+    city: "Daegu",
     score: {
       access: 90,
       acreage: 90,
@@ -42,7 +42,7 @@ export const defaultScores: Array<ScoreWithCity> = [
     },
   },
   {
-    city: "인천광역시",
+    city: "Incheon",
     score: {
       access: 85,
       acreage: 85,
@@ -52,7 +52,7 @@ export const defaultScores: Array<ScoreWithCity> = [
     },
   },
   {
-    city: "광주광역시",
+    city: "Gwangju",
     score: {
       access: 80,
       acreage: 80,
@@ -62,7 +62,7 @@ export const defaultScores: Array<ScoreWithCity> = [
     },
   },
   {
-    city: "대전광역시",
+    city: "Daejeon",
     score: {
       access: 75,
       acreage: 75,
@@ -72,7 +72,7 @@ export const defaultScores: Array<ScoreWithCity> = [
     },
   },
   {
-    city: "울산광역시",
+    city: "Ulsan",
     score: {
       access: 60,
       acreage: 60,
