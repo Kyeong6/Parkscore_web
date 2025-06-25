@@ -60,6 +60,7 @@ export const DetailScores = () => {
               style={{
                 backgroundColor: scoreColors[key],
                 width: `${(width * selectedCityScore[key]) / 100}px`,
+                transform: 'translateY(12px)',
               }}
             ></div>
           </div>

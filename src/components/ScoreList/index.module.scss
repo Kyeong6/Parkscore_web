@@ -30,3 +30,13 @@
     font-size: 0.8rem;
   }
 }
+
+.bcYAxis text.long-city {
+  font-size: 0.7rem !important;
+  fill: #4a4a4a !important;
+}
+
+:global(.long-city) {
+  font-size: 0.85rem !important;
+  fill: #4a4a4a !important;
+}

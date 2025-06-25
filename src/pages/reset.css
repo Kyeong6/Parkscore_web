@@ -133,3 +133,8 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+.long-city {
+	font-size: 0.7rem !important;
+	fill: #4a4a4a !important;
+}

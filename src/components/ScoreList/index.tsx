@@ -101,10 +101,8 @@ export const ScoreList = () => {
     // append city name
     chart
       .insert("g")
-      .attr("class", cn(style.bcYAxis, style.bcAxis))
-      .call(yAxis)
-      .transition()
-      .duration(300);
+      .attr("class", cn("bcYAxis", style.bcYAxis, style.bcAxis))
+      .call(yAxis);
 
     // append score number circle
     chart
@@ -138,6 +136,16 @@ export const ScoreList = () => {
       )
       .text((_, i) => i + 1)
       .transition();
+
+    setTimeout(() => {
+      d3.selectAll(".bcYAxis .tick text")
+        .each(function () {
+          const text = (this as SVGTextElement).textContent;
+          if (text && text.length > 9) {
+            d3.select(this).classed("long-city", true);
+          }
+        });
+    }, 0);
 
     return () => {
       chart.remove();
