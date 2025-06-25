@@ -155,5 +155,3 @@ pnpm-debug.log*
 .idea/
 
 package-lock.json
-public/city-logo/
-parkscore_data.xlsx
